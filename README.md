@@ -1,4 +1,4 @@
-# 🚀 Low Level Design (LLD) - Complete Interview Preparation Repository
+# 🚀 Low Level Design (LLD)
 
 [![Java](https://img.shields.io/badge/Java-8%2B-orange.svg)](https://www.oracle.com/java/)
 [![Design Patterns](https://img.shields.io/badge/Design%20Patterns-Gang%20of%20Four-blue.svg)](https://en.wikipedia.org/wiki/Design_Patterns)
