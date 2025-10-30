@@ -20,7 +20,7 @@
 
 ## 🏗️ Repository Overview
 
-This repository contains **8 comprehensive Low Level Design (LLD) projects** implemented in Java, specifically designed for **FAANG technical interviews**. Each project demonstrates multiple design patterns, OOP principles, and best practices commonly asked in system design interviews.
+This repository contains **9 comprehensive Low Level Design (LLD) projects** implemented in Java, specifically designed for **FAANG technical interviews**. Each project demonstrates multiple design patterns, OOP principles, and best practices commonly asked in system design interviews.
 
 ### 🎯 **Purpose**
 - **Interview Preparation**: Ready-to-use implementations for 45-90 minute technical interviews
@@ -30,7 +30,7 @@ This repository contains **8 comprehensive Low Level Design (LLD) projects** imp
 - **Scalability**: Extensible architectures ready for follow-up questions
 
 ### 🏆 **Key Highlights**
-- ✅ **8 Complete Systems** with full documentation
+- ✅ **9 Complete Systems** with full documentation
 - ✅ **20+ Design Patterns** implemented across projects
 - ✅ **SOLID Principles** demonstrated in every project
 - ✅ **Thread-Safe Operations** where applicable
@@ -57,7 +57,23 @@ This repository contains **8 comprehensive Low Level Design (LLD) projects** imp
 
 ---
 
-### 2. 💬 **Messaging Service**
+### 2. 🍕 **Food Delivery Service**
+**Location**: [`FoodDeliveryService/`](FoodDeliveryService/)
+
+**Core Features**:
+- Multi-user system (Customer, Restaurant Owner, Delivery Partner)
+- Restaurant and menu management
+- Complete order lifecycle management
+- Smart delivery partner assignment
+- Location-based services
+
+**Design Patterns**: Strategy, Singleton, Factory, Service Layer
+**Key Concepts**: Order processing, delivery assignment, location services, user management
+**Interview Focus**: Multi-role systems, location algorithms, order state management
+
+---
+
+### 3. 💬 **Messaging Service**
 **Location**: [`MessagingService/`](MessagingService/)
 
 **Core Features**:
@@ -72,7 +88,7 @@ This repository contains **8 comprehensive Low Level Design (LLD) projects** imp
 
 ---
 
-### 3. 🚗 **Parking Lot Service**
+### 4. 🚗 **Parking Lot Service**
 **Location**: [`ParkingLotService/`](ParkingLotService/)
 
 **Core Features**:
@@ -87,7 +103,7 @@ This repository contains **8 comprehensive Low Level Design (LLD) projects** imp
 
 ---
 
-### 4. 🏢 **Elevator Control System**
+### 5. 🏢 **Elevator Control System**
 **Location**: [`ElevatorControlSystem/`](ElevatorControlSystem/)
 
 **Core Features**:
@@ -102,7 +118,7 @@ This repository contains **8 comprehensive Low Level Design (LLD) projects** imp
 
 ---
 
-### 5. 📋 **Task Scheduler**
+### 6. 📋 **Task Scheduler**
 **Location**: [`TaskScheduler/`](TaskScheduler/)
 
 **Core Features**:
@@ -117,7 +133,7 @@ This repository contains **8 comprehensive Low Level Design (LLD) projects** imp
 
 ---
 
-### 6. 🚕 **Ride Booking Service**
+### 7. 🚕 **Ride Booking Service**
 **Location**: [`RideBookingService/`](RideBookingService/)
 
 **Core Features**:
@@ -132,7 +148,7 @@ This repository contains **8 comprehensive Low Level Design (LLD) projects** imp
 
 ---
 
-### 7. ⚡ **Rate Limiter Service**
+### 8. ⚡ **Rate Limiter Service**
 **Location**: [`RateLimiterService/`](RateLimiterService/)
 
 **Core Features**:
@@ -147,7 +163,7 @@ This repository contains **8 comprehensive Low Level Design (LLD) projects** imp
 
 ---
 
-### 8. 💰 **Splitwise**
+### 9. 💰 **Splitwise**
 **Location**: [`Splitwise/`](Splitwise/)
 
 **Core Features**:
@@ -167,13 +183,13 @@ This repository contains **8 comprehensive Low Level Design (LLD) projects** imp
 ### **Creational Patterns**
 | Pattern | Projects | Use Case |
 |---------|----------|----------|
-| **Factory** | BookMyShow, MessagingService, ParkingLot, ElevatorControl, TaskScheduler | Object creation with consistent initialization |
-| **Singleton** | BookMyShow, MessagingService, ParkingLot, ElevatorControl, TaskScheduler | Global state management and thread safety |
+| **Factory** | BookMyShow, FoodDeliveryService, MessagingService, ParkingLot, ElevatorControl, TaskScheduler | Object creation with consistent initialization |
+| **Singleton** | BookMyShow, FoodDeliveryService, MessagingService, ParkingLot, ElevatorControl, TaskScheduler | Global state management and thread safety |
 
 ### **Behavioral Patterns**
 | Pattern | Projects | Use Case |
 |---------|----------|----------|
-| **Strategy** | BookMyShow, MessagingService, ParkingLot, ElevatorControl, RideBooking, Splitwise | Algorithm encapsulation and interchangeability |
+| **Strategy** | BookMyShow, FoodDeliveryService, MessagingService, ParkingLot, ElevatorControl, RideBooking, Splitwise | Algorithm encapsulation and interchangeability |
 | **Observer** | BookMyShow, MessagingService, ParkingLot, TaskScheduler | Event-driven notifications and loose coupling |
 
 ### **Architectural Patterns**
@@ -283,6 +299,7 @@ ProjectName/
 
 #### **System Design Questions**
 - "Design a movie booking system like BookMyShow"
+- "Design a food delivery system like Swiggy/Zomato"
 - "Design a messaging system like WhatsApp"
 - "Design a parking lot management system"
 - "Design an elevator control system"
@@ -309,6 +326,7 @@ ProjectName/
 ```
 LLD/
 ├── BookMyShow/                 # Movie booking system
+├── FoodDeliveryService/        # Food delivery system
 ├── MessagingService/           # WhatsApp-like messaging
 ├── ParkingLotService/          # Parking management system
 ├── ElevatorControlSystem/      # Elevator control system
