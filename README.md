@@ -20,7 +20,7 @@
 
 ## 🏗️ Repository Overview
 
-This repository contains **9 comprehensive Low Level Design (LLD) projects** implemented in Java, specifically designed for **FAANG technical interviews**. Each project demonstrates multiple design patterns, OOP principles, and best practices commonly asked in system design interviews.
+This repository contains **10 comprehensive Low Level Design (LLD) projects** implemented in Java, specifically designed for **FAANG technical interviews**. Each project demonstrates multiple design patterns, OOP principles, and best practices commonly asked in system design interviews.
 
 ### 🎯 **Purpose**
 - **Interview Preparation**: Ready-to-use implementations for 45-90 minute technical interviews
@@ -30,7 +30,7 @@ This repository contains **9 comprehensive Low Level Design (LLD) projects** imp
 - **Scalability**: Extensible architectures ready for follow-up questions
 
 ### 🏆 **Key Highlights**
-- ✅ **9 Complete Systems** with full documentation
+- ✅ **10 Complete Systems** with full documentation
 - ✅ **20+ Design Patterns** implemented across projects
 - ✅ **SOLID Principles** demonstrated in every project
 - ✅ **Thread-Safe Operations** where applicable
@@ -176,6 +176,22 @@ This repository contains **9 comprehensive Low Level Design (LLD) projects** imp
 **Key Concepts**: Expense management, debt calculation, settlement algorithms  
 **Interview Focus**: Financial calculations, algorithm optimization, data consistency
 
+### 10. 🎥 **Video Streaming Service**
+**Location**: [`VideoStreamingService/`](VideoStreamingService/)
+
+**Core Features**:
+- YouTube-like video streaming platform
+- Multi-role user system (Viewer, Creator, Admin)
+- Channel creation and management
+- Content upload (Video, Audio, Image) with visibility controls
+- Subscription and engagement system
+- Search and discovery algorithms
+- Real-time analytics and trending content
+
+**Design Patterns**: Factory, Singleton, Strategy, Service Layer
+**Key Concepts**: Content management, search algorithms, engagement tracking, analytics
+**Interview Focus**: Content discovery, recommendation systems, scalability, real-time features
+
 ---
 
 ## 🎯 Design Patterns Demonstrated
@@ -183,13 +199,13 @@ This repository contains **9 comprehensive Low Level Design (LLD) projects** imp
 ### **Creational Patterns**
 | Pattern | Projects | Use Case |
 |---------|----------|----------|
-| **Factory** | BookMyShow, FoodDeliveryService, MessagingService, ParkingLot, ElevatorControl, TaskScheduler | Object creation with consistent initialization |
-| **Singleton** | BookMyShow, FoodDeliveryService, MessagingService, ParkingLot, ElevatorControl, TaskScheduler | Global state management and thread safety |
+| **Factory** | BookMyShow, FoodDeliveryService, MessagingService, ParkingLot, ElevatorControl, TaskScheduler, VideoStreaming | Object creation with consistent initialization |
+| **Singleton** | BookMyShow, FoodDeliveryService, MessagingService, ParkingLot, ElevatorControl, TaskScheduler, VideoStreaming | Global state management and thread safety |
 
 ### **Behavioral Patterns**
 | Pattern | Projects | Use Case |
 |---------|----------|----------|
-| **Strategy** | BookMyShow, FoodDeliveryService, MessagingService, ParkingLot, ElevatorControl, RideBooking, Splitwise | Algorithm encapsulation and interchangeability |
+| **Strategy** | BookMyShow, FoodDeliveryService, MessagingService, ParkingLot, ElevatorControl, RideBooking, Splitwise, VideoStreaming | Algorithm encapsulation and interchangeability |
 | **Observer** | BookMyShow, MessagingService, ParkingLot, TaskScheduler | Event-driven notifications and loose coupling |
 
 ### **Architectural Patterns**
@@ -290,6 +306,7 @@ ProjectName/
 - **BookMyShow**: Complete booking system with multiple patterns
 - **MessagingService**: Real-time communication system
 - **RideBookingService**: Location-based matching system
+- **VideoStreamingService**: YouTube-like platform with content management
 
 #### **30-45 Minutes** ⏰
 - **RateLimiterService**: Algorithm-focused implementation
@@ -305,6 +322,7 @@ ProjectName/
 - "Design an elevator control system"
 - "Design a task scheduling system"
 - "Design a ride-sharing system like Uber"
+- "Design a video streaming platform like YouTube"
 
 #### **Algorithm Questions**
 - "Implement rate limiting using token bucket"
@@ -334,6 +352,7 @@ LLD/
 ├── RideBookingService/         # Uber-like ride booking
 ├── RateLimiterService/         # API rate limiting
 ├── Splitwise/                  # Expense splitting system
+├── VideoStreamingService/      # YouTube-like video platform
 ├── README.md                   # This file
 └── .gitignore                  # Git ignore rules
 ```
